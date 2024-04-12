@@ -4,5 +4,5 @@ module top_module(
     input x1,  // three inputs
     output f   // one output
 );
-  
+
 endmodule
