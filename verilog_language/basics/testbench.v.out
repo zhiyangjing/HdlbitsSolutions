@@ -1,0 +1,57 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "G:\applications\terminal\iverilog\iverilog\lib\ivl\system.vpi";
+:vpi_module "G:\applications\terminal\iverilog\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "G:\applications\terminal\iverilog\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "G:\applications\terminal\iverilog\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "G:\applications\terminal\iverilog\iverilog\lib\ivl\va_math.vpi";
+S_0000019b68e49ce0 .scope module, "tb_top_module" "tb_top_module" 2 5;
+ .timescale -9 -12;
+P_0000019b68e4d330 .param/l "PERIOD" 0 2 7, +C4<00000000000000000000000000001010>;
+v0000019b68e4cbf0_0 .var "in", 0 0;
+v0000019b68d12e30_0 .net "out", 0 0, L_0000019b68d45bc0;  1 drivers
+S_0000019b68d12ca0 .scope module, "u_top_module" "top_module" 2 27, 3 1 0, S_0000019b68e49ce0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "in";
+    .port_info 1 /OUTPUT 1 "out";
+L_0000019b68d45bc0 .functor NOT 1, v0000019b68e4cbf0_0, C4<0>, C4<0>, C4<0>;
+v0000019b68e49a40_0 .net "in", 0 0, v0000019b68e4cbf0_0;  1 drivers
+v0000019b68e4cb50_0 .net "out", 0 0, L_0000019b68d45bc0;  alias, 1 drivers
+    .scope S_0000019b68e49ce0;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000019b68e4cbf0_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0000019b68e49ce0;
+T_1 ;
+    %vpi_call 2 35 "$dumpfile", "./tb_test.vcd" {0 0 0};
+    %vpi_call 2 36 "$dumpvars" {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000019b68e4cbf0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000019b68e4cbf0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000019b68e4cbf0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000019b68e4cbf0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000019b68e4cbf0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000019b68e4cbf0_0, 0, 1;
+    %vpi_call 2 48 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "testbench.v";
+    "./notgate.v";

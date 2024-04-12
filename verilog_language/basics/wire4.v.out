@@ -1,0 +1,46 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "G:\applications\terminal\iverilog\iverilog\lib\ivl\system.vpi";
+:vpi_module "G:\applications\terminal\iverilog\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "G:\applications\terminal\iverilog\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "G:\applications\terminal\iverilog\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "G:\applications\terminal\iverilog\iverilog\lib\ivl\va_math.vpi";
+S_000001a13fd9ed40 .scope module, "top_module" "top_module" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "c";
+    .port_info 3 /OUTPUT 1 "w";
+    .port_info 4 /OUTPUT 1 "x";
+    .port_info 5 /OUTPUT 1 "y";
+    .port_info 6 /OUTPUT 1 "z";
+o000001a13fbf6fb8 .functor BUFZ 1, C4<z>; HiZ drive
+L_000001a13fd9e380 .functor BUFZ 1, o000001a13fbf6fb8, C4<0>, C4<0>, C4<0>;
+o000001a13fbf6fe8 .functor BUFZ 1, C4<z>; HiZ drive
+L_000001a13fd9e5d0 .functor BUFZ 1, o000001a13fbf6fe8, C4<0>, C4<0>, C4<0>;
+L_000001a13fbc30a0 .functor BUFZ 1, o000001a13fbf6fe8, C4<0>, C4<0>, C4<0>;
+o000001a13fbf7018 .functor BUFZ 1, C4<z>; HiZ drive
+L_000001a13fbc3460 .functor BUFZ 1, o000001a13fbf7018, C4<0>, C4<0>, C4<0>;
+v000001a13fd9eed0_0 .net "a", 0 0, o000001a13fbf6fb8;  0 drivers
+v000001a13fd9e530_0 .net "b", 0 0, o000001a13fbf6fe8;  0 drivers
+v000001a13fd9e2e0_0 .net "c", 0 0, o000001a13fbf7018;  0 drivers
+v000001a13fd9ca60_0 .net "w", 0 0, L_000001a13fd9e380;  1 drivers
+v000001a13fd9cb00_0 .net "x", 0 0, L_000001a13fd9e5d0;  1 drivers
+v000001a13fd9cba0_0 .net "y", 0 0, L_000001a13fbc30a0;  1 drivers
+v000001a13fd9cc40_0 .net "z", 0 0, L_000001a13fbc3460;  1 drivers
+    .scope S_000001a13fd9ed40;
+T_0 ;
+    %vpi_call 2 6 "$display", "start a clock pulse" {0 0 0};
+    %vpi_call 2 7 "$dumpfile", "wave.vcd" {0 0 0};
+    %vpi_call 2 8 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001a13fd9ed40 {0 0 0};
+    %delay 6000, 0;
+    %vpi_call 2 9 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "wire4.v";

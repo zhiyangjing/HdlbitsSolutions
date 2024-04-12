@@ -1,0 +1,154 @@
+$date
+	Tue Apr 02 18:51:10 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_top_module $end
+$var wire 32 ! sum [31:0] $end
+$var parameter 32 " PERIOD $end
+$var reg 32 # a [31:0] $end
+$var reg 32 $ b [31:0] $end
+$scope module u_top_module $end
+$var wire 32 % a [31:0] $end
+$var wire 32 & b [31:0] $end
+$var wire 32 ' sum [31:0] $end
+$var wire 16 ( low_sum [15:0] $end
+$var wire 1 ) low_cout $end
+$var wire 16 * high_sum [15:0] $end
+$var wire 1 + cout $end
+$var wire 16 , b_low [15:0] $end
+$var wire 16 - b_high [15:0] $end
+$var wire 16 . a_low [15:0] $end
+$var wire 16 / a_high [15:0] $end
+$scope module add1 $end
+$var wire 16 0 a [15:0] $end
+$var wire 16 1 b [15:0] $end
+$var wire 1 2 cin $end
+$var wire 16 3 sum [15:0] $end
+$var wire 1 ) cout $end
+$upscope $end
+$scope module add2 $end
+$var wire 16 4 a [15:0] $end
+$var wire 16 5 b [15:0] $end
+$var wire 1 ) cin $end
+$var wire 16 6 sum [15:0] $end
+$var wire 1 + cout $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 "
+$end
+#0
+$dumpvars
+b0 6
+b0 5
+b0 4
+b0 3
+02
+b0 1
+b0 0
+b0 /
+b0 .
+b0 -
+b0 ,
+0+
+b0 *
+0)
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 !
+$end
+#10000
+b1 !
+b1 '
+b1 (
+b1 3
+b1 ,
+b1 1
+b1 $
+b1 &
+#20000
+b10 !
+b10 '
+b10 (
+b10 3
+b10 ,
+b10 1
+b10 $
+b10 &
+#30000
+b11 !
+b11 '
+b11 (
+b11 3
+b1 .
+b1 0
+b1 #
+b1 %
+#40000
+b1111111111111111 !
+b1111111111111111 '
+b1111111111111111 (
+b1111111111111111 3
+b0 ,
+b0 1
+b1111111111111111 .
+b1111111111111111 0
+b0 $
+b0 &
+b1111111111111111 #
+b1111111111111111 %
+#50000
+b1 *
+b1 6
+b10000000000000000 !
+b10000000000000000 '
+b0 (
+b0 3
+1)
+b1 ,
+b1 1
+b1 $
+b1 &
+#60000
+b1100110011000000 (
+b1100110011000000 3
+b111100110011000000 !
+b111100110011000000 '
+b11 *
+b11 6
+b1100110011000001 ,
+b1100110011000001 1
+b10 -
+b10 5
+b101100110011000001 $
+b101100110011000001 &
+#70000
+b0 (
+b0 3
+0)
+b0 !
+b0 '
+b0 *
+b0 6
+b0 .
+b0 0
+b0 ,
+b0 1
+b0 -
+b0 5
+b0 #
+b0 %
+b0 $
+b0 &

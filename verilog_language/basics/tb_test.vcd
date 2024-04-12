@@ -1,0 +1,43 @@
+$date
+	Mon Apr 01 16:47:27 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_top_module $end
+$var wire 1 ! out $end
+$var parameter 32 " PERIOD $end
+$var reg 1 # in $end
+$scope module u_top_module $end
+$var wire 1 # in $end
+$var wire 1 ! out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 "
+$end
+#0
+$dumpvars
+0#
+1!
+$end
+#10000
+0!
+1#
+#20000
+1!
+0#
+#30000
+0!
+1#
+#40000
+1!
+0#
+#50000
+0!
+1#

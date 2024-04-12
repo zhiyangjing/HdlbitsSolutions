@@ -1,0 +1,48 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "G:\applications\terminal\iverilog\iverilog\lib\ivl\system.vpi";
+:vpi_module "G:\applications\terminal\iverilog\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "G:\applications\terminal\iverilog\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "G:\applications\terminal\iverilog\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "G:\applications\terminal\iverilog\iverilog\lib\ivl\va_math.vpi";
+S_00000178399558d0 .scope module, "top_module" "top_module" 2 5;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "c";
+    .port_info 3 /INPUT 1 "d";
+    .port_info 4 /OUTPUT 1 "out1";
+    .port_info 5 /OUTPUT 1 "out2";
+o0000017839956fd8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000017839951ff0_0 .net "a", 0 0, o0000017839956fd8;  0 drivers
+o0000017839957008 .functor BUFZ 1, C4<z>; HiZ drive
+v0000017839952090_0 .net "b", 0 0, o0000017839957008;  0 drivers
+o0000017839957038 .functor BUFZ 1, C4<z>; HiZ drive
+v0000017839952130_0 .net "c", 0 0, o0000017839957038;  0 drivers
+o0000017839957068 .functor BUFZ 1, C4<z>; HiZ drive
+v00000178399521d0_0 .net "d", 0 0, o0000017839957068;  0 drivers
+o0000017839957098 .functor BUFZ 1, C4<z>; HiZ drive
+v0000017839952270_0 .net "out1", 0 0, o0000017839957098;  0 drivers
+o00000178399570c8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000017839952310_0 .net "out2", 0 0, o00000178399570c8;  0 drivers
+S_0000017839955a60 .scope module, "inst" "mod_a" 2 13, 2 1 0, S_00000178399558d0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "out1";
+    .port_info 1 /OUTPUT 1 "out2";
+    .port_info 2 /INPUT 1 "in1";
+    .port_info 3 /INPUT 1 "in2";
+    .port_info 4 /INPUT 1 "in3";
+    .port_info 5 /INPUT 1 "in4";
+v0000017839923540_0 .net "in1", 0 0, o0000017839956fd8;  alias, 0 drivers
+v0000017839a9c980_0 .net "in2", 0 0, o0000017839957008;  alias, 0 drivers
+v0000017839a9ca20_0 .net "in3", 0 0, o0000017839957038;  alias, 0 drivers
+v0000017839a9cac0_0 .net "in4", 0 0, o0000017839957068;  alias, 0 drivers
+v0000017839a9cb60_0 .net "out1", 0 0, o0000017839957098;  alias, 0 drivers
+v0000017839a9cc00_0 .net "out2", 0 0, o00000178399570c8;  alias, 0 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "module_name.v";

@@ -1,0 +1,100 @@
+$date
+	Wed Apr 03 13:01:38 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_top_module $end
+$var wire 32 ! sum [31:0] $end
+$var parameter 32 " PERIOD $end
+$var reg 32 # a [31:0] $end
+$var reg 32 $ b [31:0] $end
+$var reg 1 % sub $end
+$scope module u_top_module $end
+$var wire 32 & a [31:0] $end
+$var wire 32 ' b [31:0] $end
+$var wire 1 ( high_cout $end
+$var wire 1 ) low_cout $end
+$var wire 1 % sub $end
+$var wire 32 * sum [31:0] $end
+$scope module add_inst1 $end
+$var wire 16 + a [15:0] $end
+$var wire 16 , b [15:0] $end
+$var wire 1 - cin $end
+$var wire 1 ) cout $end
+$var wire 16 . sum [15:0] $end
+$upscope $end
+$scope module add_inst2 $end
+$var wire 16 / a [15:0] $end
+$var wire 16 0 b [15:0] $end
+$var wire 1 ) cin $end
+$var wire 1 ( cout $end
+$var wire 16 1 sum [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 "
+$end
+#0
+$dumpvars
+bz 1
+b0 0
+b0 /
+bz .
+0-
+b0 ,
+b0 +
+bz *
+z)
+z(
+b0 '
+b0 &
+0%
+b0 $
+b0 #
+bz !
+$end
+#10000
+b1 ,
+b1 $
+b1 '
+#20000
+b10 ,
+b10 $
+b10 '
+#30000
+b1 +
+b1 #
+b1 &
+#40000
+b1111111111111111 ,
+b1111111111111111 0
+b1111111111111111 +
+1%
+b0 $
+b0 '
+b1111111111111111 #
+b1111111111111111 &
+#50000
+b1111111111111110 ,
+b1 $
+b1 '
+#60000
+b11001100111110 ,
+b1111111111111101 0
+b101100110011000001 $
+b101100110011000001 '
+#70000
+b1111111111111111 ,
+b1111111111111111 0
+b0 +
+b0 #
+b0 &
+b0 $
+b0 '

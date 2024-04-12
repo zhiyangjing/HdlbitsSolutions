@@ -1,0 +1,154 @@
+$date
+	Wed Apr 03 15:49:55 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_top_module $end
+$var wire 3 ! pos [2:0] $end
+$var parameter 32 " PERIOD $end
+$var reg 8 # in [7:0] $end
+$scope module u_top_module $end
+$var wire 8 $ in [7:0] $end
+$var reg 3 % pos [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 "
+$end
+#0
+$dumpvars
+b0 %
+b0 $
+b0 #
+b0 !
+$end
+#10000
+b1 #
+b1 $
+#20000
+b1 !
+b1 %
+b10 #
+b10 $
+#30000
+b0 !
+b0 %
+b11 #
+b11 $
+#40000
+b10 !
+b10 %
+b100 #
+b100 $
+#50000
+b0 !
+b0 %
+b101 #
+b101 $
+#60000
+b1 !
+b1 %
+b110 #
+b110 $
+#70000
+b0 !
+b0 %
+b111 #
+b111 $
+#80000
+b11 !
+b11 %
+b1000 #
+b1000 $
+#90000
+b0 !
+b0 %
+b1001 #
+b1001 $
+#100000
+b100 !
+b100 %
+b10000 #
+b10000 $
+#110000
+b0 !
+b0 %
+b10001 #
+b10001 $
+#120000
+b1 !
+b1 %
+b10010 #
+b10010 $
+#130000
+b0 !
+b0 %
+b10011 #
+b10011 $
+#140000
+b10 !
+b10 %
+b10100 #
+b10100 $
+#150000
+b0 !
+b0 %
+b10101 #
+b10101 $
+#160000
+b1 !
+b1 %
+b10110 #
+b10110 $
+#170000
+b0 !
+b0 %
+b10111 #
+b10111 $
+#180000
+b11 !
+b11 %
+b11000 #
+b11000 $
+#190000
+b0 !
+b0 %
+b11001 #
+b11001 $
+#200000
+b101 !
+b101 %
+b100000 #
+b100000 $
+#210000
+b0 !
+b0 %
+b100001 #
+b100001 $
+#220000
+b1 !
+b1 %
+b100010 #
+b100010 $
+#230000
+b0 !
+b0 %
+b100011 #
+b100011 $
+#240000
+b10 !
+b10 %
+b100100 #
+b100100 $
+#250000
+b0 !
+b0 %
+b100101 #
+b100101 $
+#260000
