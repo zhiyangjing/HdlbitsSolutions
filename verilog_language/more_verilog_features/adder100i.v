@@ -11,6 +11,7 @@ module top_module(
   generate 
     for (i = 1;i < 100;i=i + 1) begin : adder_gen
         fulladder fa(a[i],b[i],cout_temp[i-1],cout_temp[i],sum_temp[i]);
+        assign sum = 100'd1;
     end
   endgenerate
   assign cout = cout_temp;
